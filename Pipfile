@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==1.11.7"
+cx-oracle = "==6.0.3"
+python-decouple = "*"
+dj-database-url = "*"
+django-extensions = "*"
+
+[dev-packages]
+notebook = "*"
+sqlformatter = "*"
+
+[requires]
+python_version = "3.6"
