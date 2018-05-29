@@ -30,12 +30,15 @@ pipenv install --dev
 
 Agora que temos as dependencias, configure seu banco de dados preferido no `.env` e vamos importar alguns dados iniciais que nos ajudarão em algumas etapas
 
+*PS*: Caso queira utilizar SQLite, remova a linha `DATABASE_URL` do arquivo `.env`
+
 ```bash
 # Para gerar o banco
 python manage.py migrate
 # Para importar os dados
 python manage.py loaddata data.json
 ```
+
 
 Lembrando que estamos usando `dj-database-url`. Alguns exemplos de conexões:
 
