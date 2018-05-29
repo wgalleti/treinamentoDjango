@@ -86,9 +86,8 @@ WSGI_APPLICATION = 'treinamento.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 DATABASES = dict()
 DATABASES['default'] = config('DATABASE_URL', cast=parse, default=f"sqlite:///{os.path.join(BASE_DIR, 'db.sqlite3')}")
-DB_ORCL = config('DATABASE_ORC', cast=parse, default=None)
-if DB_ORCL is not None:
-    DATABASES['oracle'] = DB_ORCL
+if config('INTEGRACAO', cast=bool, default=False):
+    DATABASES['oracle'] = config('DATABASE_ORC', cast=parse)
 
 
 

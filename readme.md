@@ -9,7 +9,7 @@ Agora, vamos iniciar um ambiente virtual e importar nosso projeto:
 ```bash
 # clonar o projeto Git
 git clone https://github.com/wgalleti/treinamentoDjango.git
-cd treinamentoDjango.git
+cd treinamentoDjango
 
 # configure suas variaveis de ambiente
 cp env.sample .env
@@ -22,7 +22,7 @@ pip install pipenv
 .venv\Scripts\activate
 
 # Linux ou mac
-source .venv\bin\activate
+source .venv/bin/activate
 
 pipenv install
 pipenv install --dev
@@ -38,6 +38,14 @@ python manage.py migrate
 # Para importar os dados
 python manage.py loaddata data.json
 ```
+
+Caso aparecer algo como `Installed 1680 object(s) from 1 fixture(s)`, funcionou, basta rodar
+
+```
+python manage.py shell_plus --notebook
+```
+
+Ir até a pasta notebooks e WAALAAAA
 
 
 Lembrando que estamos usando `dj-database-url`. Alguns exemplos de conexões:
