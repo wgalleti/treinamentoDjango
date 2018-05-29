@@ -35,9 +35,8 @@ Lembrando que estamos usando `dj-database-url`. Alguns exemplos de conexões:
 URL schema
 ----------
 
-|-|-|
 | Engine      | Django Backend                                | URL                                              |
-|-|-|
+|---|---|---|
 | PostgreSQL  | ``django.db.backends.postgresql_psycopg2``    | ``postgres://USER:PASSWORD@HOST:PORT/NAME`` |
 | PostGIS     | ``django.contrib.gis.db.backends.postgis``    | ``postgis://USER:PASSWORD@HOST:PORT/NAME``       |
 | MSSQL       | ``sql_server.pyodbc``                         | ``mssql://USER:PASSWORD@HOST:PORT/NAME``         |
