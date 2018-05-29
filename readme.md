@@ -8,7 +8,7 @@ Agora, vamos iniciar um ambiente virtual e importar nosso projeto:
 
 ```bash
 # clonar o projeto Git
-git clone git@github.com:wgalleti/treinamentoDjango.git
+git clone https://github.com/wgalleti/treinamentoDjango.git
 cd treinamentoDjango.git
 
 # configure suas variaveis de ambiente
